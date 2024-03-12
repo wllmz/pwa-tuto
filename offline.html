@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuto PWA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    /><script src="/index.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Tuto PWA</a>
+      </div>
+    </nav>
+    <div class="container py-5"><div class="row" id="posts">
+    
+    </div>
+    </div>
+
+    <template id="card">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title js-title"></h5>
+                    <p class="card-text js-body"></p>
+                </div>
+            </div>
+        </div>
+    </template>
+    
+    <template id="loader">
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </template>
+    
+    <template id="error">
+        <div class="text-center mb-2">
+            Impossible de charger le contenu
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary js-reload">Recharger</button>
+        </div>
+    </template>
+  </body>
+</html>
